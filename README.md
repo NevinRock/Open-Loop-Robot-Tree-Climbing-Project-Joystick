@@ -2,7 +2,7 @@
 **Please try this project only if you have some embedded development experience. Otherwise, there will be many unintelligible aspects and potential security risks!**
 ## Brief Introduction👲
 
-This project focuses on developing an open-loop robot designed to climb trees. The robot uses a microcontroller to control its movement and various hardware components to achieve the climbing mechanism.
+This project focuses on developing a joystick contorl robot designed to climb trees. The robot uses a microcontroller to control its movement and various hardware components to achieve the climbing mechanism.
 
 ## Operating System📢
 
