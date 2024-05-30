@@ -20,10 +20,13 @@
 #include "main.h"
 #include "adc.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <stdlib.h>
+#include <string.h>
 
 /* USER CODE END Includes */
 
@@ -49,6 +52,7 @@
 uint16_t ADC_Value;
 uint16_t ADC1_Value, ADC2_Value, ADC3_Value;
 uint16_t count, x;
+char message[100];
 
 /* USER CODE END PV */
 
@@ -61,6 +65,23 @@ void Stepper_Backward(uint16_t n);
 void Servo_Forward(uint16_t C,uint16_t T);
 void Servo_Backward(uint16_t C,uint16_t T);
 uint16_t ADC_Read(uint16_t C);
+
+void Trans( uint16_t ADC1_Value, uint16_t ADC2_Value, uint16_t ADC3_Value);
+
+void Bottom_Open(uint16_t T);
+void Bottom_Close(uint16_t T);
+
+void Top_Open(uint16_t T);
+void Top_Close(uint16_t T);
+
+void Screw_Up(uint16_t T);
+void Screw_Down(uint16_t T);
+
+void Robot_Up_Step(uint16_t S);
+void Joystick_Contorl(void);
+
+
+
 
 /* USER CODE END PFP */
 
@@ -101,10 +122,13 @@ int main(void)
   MX_ADC2_Init();
   MX_ADC3_Init();
   MX_TIM1_Init();
+  MX_UART4_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+  
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
   
   HAL_ADC_Start(&hadc1);
   HAL_ADC_Start(&hadc2);
@@ -117,66 +141,33 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-	  ADC1_Value = ADC_Read(1);
-	  ADC2_Value = ADC_Read(2);
-	  ADC3_Value = ADC_Read(3);
+  
+  // init
+  
+  
+ Bottom_Open(300);
+ Top_Open(300);
+ 
+ HAL_Delay(5000);
+ 
+ // let the gripper close
+ __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 170);
+ __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 130);
+ 
+
+ // init over
+ 
+
+ 
+
+ Robot_Up_Step(51);
+
+
 	  
-	  if(ADC1_Value > 3800){
-		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1, 130);
-	  }else if(ADC1_Value<1000){
-		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1, 170);
-	  }else{
-		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1, 0);
-
-	  }
-
-	  if(ADC2_Value > 3800){
-	  		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 130);
-	  	  }else if(ADC2_Value<1000){
-	  		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 170);
-	  	  }else{
-	  		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 0);
-
-	  }
-		  
-	  if(ADC3_Value > 3500){
-	   
-	   HAL_GPIO_WritePin(GPIOE, DIR_Pin,GPIO_PIN_RESET);
-	   HAL_Delay(1);
-		  
-		for(x = 0; x < 100; x++){
-			HAL_GPIO_WritePin(GPIOE, STP_Pin, GPIO_PIN_SET);
-			HAL_Delay(1);
-			HAL_GPIO_WritePin(GPIOE, STP_Pin, GPIO_PIN_RESET);
-			HAL_Delay(1);
-		}
-	   
-   
-	  }else if(ADC3_Value<1000){
-		 
-		HAL_GPIO_WritePin(GPIOE, DIR_Pin,GPIO_PIN_SET);
-		HAL_Delay(1);
-		 
-		for(x = 0; x < 100; x++){
-			HAL_GPIO_WritePin(GPIOE, STP_Pin, GPIO_PIN_SET);
-			HAL_Delay(1);
-			HAL_GPIO_WritePin(GPIOE, STP_Pin, GPIO_PIN_RESET);
-			HAL_Delay(1);
-		}
-		  
-		  
-	  }else{
-		 
-
-	  }
-	  
-	  
-    /* USER CODE END WHILE */
+   /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+//  }
   /* USER CODE END 3 */
 }
 
@@ -218,8 +209,9 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_TIM1|RCC_PERIPHCLK_ADC12
-                              |RCC_PERIPHCLK_ADC34;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_UART4|RCC_PERIPHCLK_TIM1
+                              |RCC_PERIPHCLK_ADC12|RCC_PERIPHCLK_ADC34;
+  PeriphClkInit.Uart4ClockSelection = RCC_UART4CLKSOURCE_PCLK1;
   PeriphClkInit.Adc12ClockSelection = RCC_ADC12PLLCLK_DIV1;
   PeriphClkInit.Adc34ClockSelection = RCC_ADC34PLLCLK_DIV1;
   PeriphClkInit.Tim1ClockSelection = RCC_TIM1CLK_HCLK;
@@ -252,9 +244,10 @@ void Stepper_Forward(uint16_t n)
 
 /**
   * @brief  This function is for stepper backword
-  * @param  $ n $ the number of loop #uint16_t
+  * @param  $ n $ is the number of loop #uint16_t
   * @retval None
   */
+
 
 void Stepper_Backward(uint16_t n) 
 {
@@ -269,61 +262,129 @@ void Stepper_Backward(uint16_t n)
 		}
 }
 
+
 /**
-  * @brief  This function is for servo forword
+  * @brief  This function is for messaage sending
   * @param  $ C $ the channel of tim1 && $ T $ is the time for delay #uint16_t
   * @retval None
   */
 
-void Servo_Forward(uint16_t C,uint16_t T)
-{	
-	if(C == 1)
-	{
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1, 130);
-		HAL_Delay(T);
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1, 0);	
-		
-	}else if(C == 2)
-	{
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 130);
-		HAL_Delay(T);
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 0);	
-	}else if(C == 3)
-	{
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 130);
-		HAL_Delay(T);
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 0);	
-	}
-	
-}
-
-/**
-  * @brief  This function is for servo backward
-  * @param  $ C $ the channel of tim1 && $ T $ is the time for delay #uint16_t
-  * @retval None
-  */
-
-void Servo_Backward(uint16_t C,uint16_t T)
+void Trans( uint16_t ADC1_Value, uint16_t ADC2_Value, uint16_t ADC3_Value)
 {
-	if(C == 1)
-	{
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1, 170);
-		HAL_Delay(T);
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1, 0);
-	}else if(C == 2)
-	{
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 170);
-		HAL_Delay(T);
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 0);
-	}
-	else if(C == 3)
-	{
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 170);
-		HAL_Delay(T);
-		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 0);
-	}
-	
+	snprintf(message, sizeof(message), "ADC_1 is: %d, ADC_2 is: %d, ADC_3 is: %d\n", ADC1_Value, ADC2_Value, ADC3_Value);
+	HAL_UART_Transmit(&huart4,(uint8_t*)message, strlen(message), HAL_MAX_DELAY);
 }
+
+
+/**
+  * @brief  This function is for bottom gripper opening
+  * @param  $ T $ is the time for servo rotating #uint16_t
+  * @retval None
+  */
+
+void Bottom_Open(uint16_t T)
+{
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 130);
+	HAL_Delay(T);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 0);
+}
+
+/**
+  * @brief  This function is for bottom gripper closing
+  * @param  $ T $ is the time for servo rotating #uint16_t
+  * @retval None
+  */
+void Bottom_Close(uint16_t T)
+{
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 170);
+	HAL_Delay(T);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 0);
+}
+
+/**
+  * @brief  This function is for top gripper opening
+  * @param  $ T $ is the time for servo rotating #uint16_t
+  * @retval None
+  */
+void Top_Open(uint16_t T)
+{
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 170);
+	HAL_Delay(T);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 0);
+}
+
+/**
+  * @brief  This function is for top gripper closing
+  * @param  $ T $ is the time for servo rotating #uint16_t
+  * @retval None
+  */
+void Top_Close(uint16_t T)
+{
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 130);
+	HAL_Delay(T);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 0);
+}
+
+/**
+  * @brief  This function is for screw rotating, bottom upward
+  * @param  $ T $ is the time for servo rotating #uint16_t
+  * @retval None
+  */
+void Screw_Up(uint16_t T)
+{
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4, 170);
+	HAL_Delay(T);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4, 0);
+}
+
+/**
+  * @brief  This function is for screw rotating, bottom downward
+  * @param  $ T $ is the time for servo rotating #uint16_t
+  * @retval None
+  */
+void Screw_Down(uint16_t T)
+{
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4, 130);
+	HAL_Delay(T);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4, 0);
+}
+
+/**
+  * @brief  This function is for robot moving upward 
+  * @param  $ S $ is the step upward
+  * @retval None
+  */
+void Robot_Up_Step(uint16_t S)
+{
+	for(int i =0; i < S; i++){
+		
+		 HAL_Delay(5000);
+ 
+		 Top_Open(300);
+		 
+		 HAL_Delay(2000);
+		 
+		 
+		 Screw_Down(35000);
+		 
+		 //top step over
+		 
+		 __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 170);
+		 __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 130);
+		 
+		  HAL_Delay(3000);
+		 
+		 Bottom_Open(300);
+		 
+		 Screw_Up(35000);
+		 
+		 __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 170);
+		 __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 130);
+			
+	}
+}
+
+
 /**
   * @brief  This function is for read value from joystick
   * @param  $ C $ the channel of ADC #uint16_t
@@ -333,23 +394,73 @@ void Servo_Backward(uint16_t C,uint16_t T)
 uint16_t ADC_Read(uint16_t C)
 {
 	if(C == 1)
-	{
+	{	
+		HAL_ADC_Start(&hadc1);
 		HAL_ADC_PollForConversion(&hadc1,1000);
 		ADC_Value = HAL_ADC_GetValue(&hadc1);
 		
 	}else if(C == 2)
 	{
+		HAL_ADC_Start(&hadc2);
 		HAL_ADC_PollForConversion(&hadc2,1000);
 		ADC_Value = HAL_ADC_GetValue(&hadc2);
 		
 	}else if(C == 3)
 	{
+		HAL_ADC_Start(&hadc3);
 		HAL_ADC_PollForConversion(&hadc3,1000);
 		ADC_Value = HAL_ADC_GetValue(&hadc3);
 	}
 	
 	return ADC_Value;
 }
+
+
+/**
+  * @brief  This function is for joystick control
+  * @param  None
+  * @retval None
+  */
+
+void Joystick_Contorl(void)
+{
+	
+	  ADC1_Value = ADC_Read(1);
+	  ADC2_Value = ADC_Read(2);
+	  ADC3_Value = ADC_Read(3);
+	  
+	  
+	  Trans(ADC1_Value, ADC2_Value, ADC3_Value);
+	
+	  if(ADC1_Value > 3800){
+		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 130);
+	  }else if(ADC1_Value<1000){
+		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 170);
+	  }else{
+		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 0);
+
+	  }
+
+	  if(ADC2_Value > 3800){
+	  		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 130);
+	  	  }else if(ADC2_Value<1000){
+	  		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 170);
+	  	  }else{
+	  		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 0);
+
+	  }
+		  
+	  if(ADC3_Value > 3500){
+		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4, 130);
+
+	  }else if(ADC3_Value<1000){
+		  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4, 170);		  
+	  }else{
+		   __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4, 0);
+
+	  }
+}
+
 
 /* USER CODE END 4 */
 

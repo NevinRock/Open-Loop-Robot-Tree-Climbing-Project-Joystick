@@ -4,6 +4,7 @@
 "year1_term3_project_joystick\gpio.o"
 "year1_term3_project_joystick\adc.o"
 "year1_term3_project_joystick\tim.o"
+"year1_term3_project_joystick\usart.o"
 "year1_term3_project_joystick\stm32f3xx_it.o"
 "year1_term3_project_joystick\stm32f3xx_hal_msp.o"
 "year1_term3_project_joystick\stm32f3xx_hal_adc.o"
@@ -23,6 +24,8 @@
 "year1_term3_project_joystick\stm32f3xx_hal_exti.o"
 "year1_term3_project_joystick\stm32f3xx_hal_tim.o"
 "year1_term3_project_joystick\stm32f3xx_hal_tim_ex.o"
+"year1_term3_project_joystick\stm32f3xx_hal_uart.o"
+"year1_term3_project_joystick\stm32f3xx_hal_uart_ex.o"
 "year1_term3_project_joystick\system_stm32f3xx.o"
 --strict --scatter "Year1_term3_project_joystick\Year1_term3_project_joystick.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

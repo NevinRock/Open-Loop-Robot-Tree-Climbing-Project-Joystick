@@ -33,6 +33,11 @@ year1_term3_project_joystick\main.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3
 year1_term3_project_joystick\main.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h
 year1_term3_project_joystick\main.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h
 year1_term3_project_joystick\main.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h
+year1_term3_project_joystick\main.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h
+year1_term3_project_joystick\main.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h
 year1_term3_project_joystick\main.o: ../Core/Inc/adc.h
 year1_term3_project_joystick\main.o: ../Core/Inc/tim.h
+year1_term3_project_joystick\main.o: ../Core/Inc/usart.h
 year1_term3_project_joystick\main.o: ../Core/Inc/gpio.h
+year1_term3_project_joystick\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+year1_term3_project_joystick\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

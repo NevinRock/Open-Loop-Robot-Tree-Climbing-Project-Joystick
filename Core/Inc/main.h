@@ -67,6 +67,10 @@ void Error_Handler(void);
 #define MS1_GPIO_Port GPIOE
 #define MS2_Pin GPIO_PIN_15
 #define MS2_GPIO_Port GPIOE
+#define DC2_Pin GPIO_PIN_10
+#define DC2_GPIO_Port GPIOD
+#define DC1_Pin GPIO_PIN_8
+#define DC1_GPIO_Port GPIOG
 
 /* USER CODE BEGIN Private defines */
 

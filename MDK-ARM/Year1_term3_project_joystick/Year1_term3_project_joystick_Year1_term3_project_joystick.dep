@@ -1,10 +1,10 @@
 Dependencies for Project 'Year1_term3_project_joystick', Target 'Year1_term3_project_joystick': (DO NOT MODIFY !)
 CompilerVersion: 5060528::V5.06 update 5 (build 528)::.\ARMCC
-F (startup_stm32f303xe.s)(0x6654BA18)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "STM32F303xE SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f303xe.lst --xref -o year1_term3_project_joystick\startup_stm32f303xe.o --depend year1_term3_project_joystick\startup_stm32f303xe.d)
-F (../Core/Src/main.c)(0x6654C6E4)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\main.o --omf_browse year1_term3_project_joystick\main.crf --depend year1_term3_project_joystick\main.d)
-I (../Core/Inc/main.h)(0x6654BA13)
+F (startup_stm32f303xe.s)(0x6655EBD3)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "STM32F303xE SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f303xe.lst --xref -o year1_term3_project_joystick\startup_stm32f303xe.o --depend year1_term3_project_joystick\startup_stm32f303xe.d)
+F (../Core/Src/main.c)(0x66591004)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\main.o --omf_browse year1_term3_project_joystick\main.crf --depend year1_term3_project_joystick\main.d)
+I (../Core/Inc/main.h)(0x6655EBD0)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -35,14 +35,19 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 I (../Core/Inc/adc.h)(0x6654BA11)
 I (../Core/Inc/tim.h)(0x6654BA12)
+I (../Core/Inc/usart.h)(0x6655D19A)
 I (../Core/Inc/gpio.h)(0x6654BA10)
-F (../Core/Src/gpio.c)(0x6654BA10)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\gpio.o --omf_browse year1_term3_project_joystick\gpio.crf --depend year1_term3_project_joystick\gpio.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x588B8344)
+F (../Core/Src/gpio.c)(0x6655EBCF)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\gpio.o --omf_browse year1_term3_project_joystick\gpio.crf --depend year1_term3_project_joystick\gpio.d)
 I (../Core/Inc/gpio.h)(0x6654BA10)
-I (../Core/Inc/main.h)(0x6654BA13)
+I (../Core/Inc/main.h)(0x6655EBD0)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -73,11 +78,13 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Core/Src/adc.c)(0x6654BA11)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\adc.o --omf_browse year1_term3_project_joystick\adc.crf --depend year1_term3_project_joystick\adc.d)
 I (../Core/Inc/adc.h)(0x6654BA11)
-I (../Core/Inc/main.h)(0x6654BA13)
+I (../Core/Inc/main.h)(0x6655EBD0)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -108,11 +115,13 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
-F (../Core/Src/tim.c)(0x6654BA12)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\tim.o --omf_browse year1_term3_project_joystick\tim.crf --depend year1_term3_project_joystick\tim.d)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
+F (../Core/Src/tim.c)(0x6655D170)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\tim.o --omf_browse year1_term3_project_joystick\tim.crf --depend year1_term3_project_joystick\tim.d)
 I (../Core/Inc/tim.h)(0x6654BA12)
-I (../Core/Inc/main.h)(0x6654BA13)
+I (../Core/Inc/main.h)(0x6655EBD0)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -143,10 +152,49 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
+F (../Core/Src/usart.c)(0x6655D19A)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\usart.o --omf_browse year1_term3_project_joystick\usart.crf --depend year1_term3_project_joystick\usart.d)
+I (../Core/Inc/usart.h)(0x6655D19A)
+I (../Core/Inc/main.h)(0x6655EBD0)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
+I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
+I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xe.h)(0x664F2628)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x664F2618)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x664F2618)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x664F2618)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x664F2618)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x664F2618)
+I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x664F2629)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x588B8344)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_exti.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Core/Src/stm32f3xx_it.c)(0x6654BA12)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_it.o --omf_browse year1_term3_project_joystick\stm32f3xx_it.crf --depend year1_term3_project_joystick\stm32f3xx_it.d)
-I (../Core/Inc/main.h)(0x6654BA13)
+I (../Core/Inc/main.h)(0x6655EBD0)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -177,11 +225,13 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 I (../Core/Inc/stm32f3xx_it.h)(0x6654BA12)
 F (../Core/Src/stm32f3xx_hal_msp.c)(0x6654BA12)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_msp.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_msp.crf --depend year1_term3_project_joystick\stm32f3xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x6654BA13)
+I (../Core/Inc/main.h)(0x6655EBD0)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -212,9 +262,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_adc.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_adc.crf --depend year1_term3_project_joystick\stm32f3xx_hal_adc.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -245,9 +297,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc_ex.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_adc_ex.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_adc_ex.crf --depend year1_term3_project_joystick\stm32f3xx_hal_adc_ex.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -278,9 +332,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal.crf --depend year1_term3_project_joystick\stm32f3xx_hal.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -311,9 +367,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_rcc.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_rcc.crf --depend year1_term3_project_joystick\stm32f3xx_hal_rcc.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -344,9 +402,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_rcc_ex.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_rcc_ex.crf --depend year1_term3_project_joystick\stm32f3xx_hal_rcc_ex.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -377,9 +437,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_gpio.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_gpio.crf --depend year1_term3_project_joystick\stm32f3xx_hal_gpio.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -410,9 +472,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_dma.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_dma.crf --depend year1_term3_project_joystick\stm32f3xx_hal_dma.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -443,9 +507,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_cortex.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_cortex.crf --depend year1_term3_project_joystick\stm32f3xx_hal_cortex.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -476,9 +542,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_pwr.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_pwr.crf --depend year1_term3_project_joystick\stm32f3xx_hal_pwr.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -509,9 +577,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_pwr_ex.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_pwr_ex.crf --depend year1_term3_project_joystick\stm32f3xx_hal_pwr_ex.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -542,9 +612,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_flash.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_flash.crf --depend year1_term3_project_joystick\stm32f3xx_hal_flash.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -575,9 +647,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_flash_ex.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_flash_ex.crf --depend year1_term3_project_joystick\stm32f3xx_hal_flash_ex.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -608,9 +682,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_i2c.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_i2c.crf --depend year1_term3_project_joystick\stm32f3xx_hal_i2c.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -641,9 +717,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_i2c_ex.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_i2c_ex.crf --depend year1_term3_project_joystick\stm32f3xx_hal_i2c_ex.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -674,9 +752,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_exti.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_exti.crf --depend year1_term3_project_joystick\stm32f3xx_hal_exti.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -707,9 +787,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_tim.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_tim.crf --depend year1_term3_project_joystick\stm32f3xx_hal_tim.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -740,9 +822,11 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_tim_ex.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_tim_ex.crf --depend year1_term3_project_joystick\stm32f3xx_hal_tim_ex.d)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
@@ -773,6 +857,78 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
+F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_uart.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_uart.crf --depend year1_term3_project_joystick\stm32f3xx_hal_uart.d)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
+I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
+I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xe.h)(0x664F2628)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x664F2618)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x664F2618)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x664F2618)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x664F2618)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x664F2618)
+I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x664F2629)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x588B8344)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_exti.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
+F (../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\stm32f3xx_hal_uart_ex.o --omf_browse year1_term3_project_joystick\stm32f3xx_hal_uart_ex.crf --depend year1_term3_project_joystick\stm32f3xx_hal_uart_ex.d)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
+I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
+I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xe.h)(0x664F2628)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x664F2618)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x664F2618)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x664F2618)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x664F2618)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x664F2618)
+I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x664F2629)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x588B8344)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_exti.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)
 F (../Core/Src/system_stm32f3xx.c)(0x664F2629)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Year1_term3_project_joystick-IC:\Users\74609\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\74609\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F303xE -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F303xE-o year1_term3_project_joystick\system_stm32f3xx.o --omf_browse year1_term3_project_joystick\system_stm32f3xx.crf --depend year1_term3_project_joystick\system_stm32f3xx.d)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h)(0x664F2629)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xe.h)(0x664F2628)
@@ -784,7 +940,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x664F2618)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x664F2618)
 I (../Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x664F2629)
-I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6654BA12)
+I (../Core/Inc/stm32f3xx_hal_conf.h)(0x6655D19B)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x664F2629)
@@ -806,3 +962,5 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h)(0x664F2629)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x664F2629)
+I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x664F2629)

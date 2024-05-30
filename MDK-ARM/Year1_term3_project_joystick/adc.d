@@ -34,3 +34,5 @@ year1_term3_project_joystick\adc.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3x
 year1_term3_project_joystick\adc.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h
 year1_term3_project_joystick\adc.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h
 year1_term3_project_joystick\adc.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h
+year1_term3_project_joystick\adc.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h
+year1_term3_project_joystick\adc.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h
