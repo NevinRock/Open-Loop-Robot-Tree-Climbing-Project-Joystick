@@ -1,16 +1,16 @@
 # Warning⚠️
 **Please try this project only if you have some embedded development experience. Otherwise, there will be many unintelligible aspects and potential security risks!**
-## Brief Introduction👲
+## Brief Introduction🧧
 
 This project focuses on developing an open loop joystick contorl robot designed to climb trees. The robot uses a microcontroller to control its movement and various hardware components to achieve the climbing mechanism.
 <img src="https://github.com/NevinRock/Open-Loop-Robot-Tree-Climbing-Project-Joystick/assets/101458251/e3f25b78-2828-4bf8-93f2-9915b63709c9" width="900px">
 
 
-## Operating System📢
+## Operating System🐉
 
 - Windows 11 Professional 23H2 22631.3593
   
-## Software Version🔑
+## Software Version🏮
 
 - **Keil uVision**: V5.39.0.0
 - **STM32CubeMX**: Version 6.10.0
