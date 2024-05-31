@@ -150,20 +150,15 @@ int main(void)
  
  HAL_Delay(5000);
  
- // let the gripper close
+ // Ask The Gripper Close
  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2, 170);
  __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3, 130);
  
 
  // init over
  
-
- 
-
  Robot_Up_Step(51);
-
-
-	  
+  
    /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
